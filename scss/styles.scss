@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Bold.woff') format('woff'), /* IE6-IE8 */
+         url('fonts/Montserrat-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/Montserrat-Light.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/Montserrat-Light.woff2')  format('woff2'), 
+         url('fonts/Montserrat-Regular.woff') format('woff'),
+         url('fonts/Montserrat-Regular.woff2') format('woff2');
+  }
+
+@font-face {
+font-family: 'Roboto';
+src: url('fonts/Roboto-Condensed-Regular.woff')format('woff'),
+        url('fonts/Roboto-Condensed-Regular.woff')format('woff')   ; /* IE9 Compat Modes */
+}
+
+:root {
+    --green: hsl(83.7,49.2%,50.6%);
+    --black: hsl(0,0%,0%);
+    --gray: hsl(0,0%,59.2%);
+}
+
+body {
+    font-family: 'Montserrat', Fallback, sans-serif;
+    margin: 0;
+    
+}
+
+.navbar {
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-content: center;
+    padding: 0 2em;
+}
+
+.nav {
+    z-index: 0;
+    position: absolute;
+    top: 62px;
+    left: 43px;
+    img {
+        padding: 2em 2em 0 0;
+    }
+}
+
+.hero {
+    background: url(../images/header/Imagen-background.jpg) center top no-repeat;
+    background-size: cover;
+    text-align: center;
+    z-index: -1;
+    position: relative;
+    top: -34px;
+    &__h1 {
+        color: #fff;
+        font-size: 32px;
+        font-weight: 700;
+    }
+    
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 550px;
+}
+
+.consultant{
+    display: flex;
+    background-color: #fff;
+    padding: 1em 2em;
+    align-items: center;
+    width: 49%;
+    &__check {
+        display: flex;
+    }
+    input {
+        border: none;
+        border-bottom: 1px solid var(--gray);
+        
+        height: 20px
+    }
+    h3 {
+        font-size: 14px;
+        margin: 0;
+    }
+    h2 {
+        margin: 0;
+    }
+}
+
+.consultant__content {
+    display: flex;
+    align-items: center;
+    margin-right: 90px;
+}
+
+.content-check {
+    width: 100px;
+}
+
+.hotels-list {
+    width: 200px;
+}
+
+.code {
+    width: 120px;
+}
+
+.button {
+    color: #fff;
+    background-color: var(--green);
+    padding: 1em;
+    width: 180px;
+    border: none;
+    font-weight: 800;
+    text-transform: uppercase;
+
+}
+
+.features-hotels {
+margin-top: 5em;
+text-align: left;
+padding: 1em 2em;
+width: 52%;
+background-color: #fff;
+span {
+    margin: 10px;
+}
+
+}
+
+
